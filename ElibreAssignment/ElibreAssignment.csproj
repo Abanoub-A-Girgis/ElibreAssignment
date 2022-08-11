@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Elibre.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Elibre.jpg" />
+    <None Remove="Elibre.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Elibre.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Elibre.jpg" />
+    <Resource Include="Elibre.png" />
+  </ItemGroup>
+
+</Project>

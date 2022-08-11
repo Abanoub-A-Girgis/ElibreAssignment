@@ -1,0 +1,29 @@
+﻿<Window x:Class="ElibreAssignment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElibreAssignment"
+        mc:Ignorable="d"
+        Title="Elibre Assignment - Abanoub Girgis" Height="auto" Width="auto" SizeToContent="WidthAndHeight" ResizeMode="NoResize" WindowStyle="SingleBorderWindow" Icon="/Elibre.png">
+    <Grid Height="600" Width="900">
+        <Border BorderBrush="DarkBlue" BorderThickness="2" CornerRadius="5" Margin="0,0,0,0" Height="500" Width="895" VerticalAlignment="Top">
+            <Canvas Name="DrawingCanvas" Height="496" MouseDown="DrawingCanvas_MouseDown" MouseMove="DrawingCanvas_MouseMove">
+                <Canvas.Background>
+                    <SolidColorBrush Color="White" Opacity="0"/>
+                </Canvas.Background>
+            </Canvas>
+        </Border>
+        <TextBlock Name="Debugging" Margin="200,510,200,10" TextAlignment="Center">
+            Left Click to Start Drawing a line 
+            <LineBreak />
+            Right Click to Release Line Drawing
+            <LineBreak />
+            Hover over a Wall and Left Click to Create a door
+            <LineBreak />
+            Hover over a Door and Left Click to Create a Window
+            <LineBreak />
+            Hover over an element and Press the "Delete" key to delete the element
+        </TextBlock>
+    </Grid>
+</Window>
